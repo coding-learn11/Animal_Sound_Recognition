@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Animal Sound Recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body >
+        <div class="header_div col-xs-12 text-center">
+            <h2 id="main_title">Animal Sound Recognition</h2>
+            <p id="note">When different sounds of certain common animals are heard such as dogs, cats, monkeys, and cows, it will show you a photo based on the animal sound heard.</p>
+        </div>
+
+        <div class="main_div">
+            <center>
+                <button id="start" onclick="startClassification();">Start</button>
+                <h4 id="timesDetected">Currently hearing: </h4>
+                <h3 id="audioName">Detected sound is of - </h3>
+                <br>
+                <img id="animal" src="sound_waves.gif">
+            </center>
+        </div>
+
+        <footer id="copyright_footer" style="text-align: center;">By - Aish</footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>
